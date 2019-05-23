@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#loop, create fake data 7 times
+7.times do
+    Markettable.create({
+        title: Faker::Book.title,
+        body: Faker::Lorem.sentence
+    })
+end
